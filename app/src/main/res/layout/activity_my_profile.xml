@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="413dp"
+        android:layout_height="350dp"
+
+        android:layout_marginEnd="2dp"
+
+        android:background="@drawable/profile_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="262dp"
+            android:layout_height="184dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="84dp"
+            app:srcCompat="@drawable/profile_photo2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="monospace"
+            android:text="BAKPATINA Vincent"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F8090808"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504" />
+
+
+    <RelativeLayout
+        android:layout_width="404dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="2dp"
+
+        android:layout_marginTop="378dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="403dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/tableRow2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="285dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_profile_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="374dp">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow"
+                android:layout_alignStart="@+id/tableRow"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" Track:"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Android "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="225dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_profile_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow"
+            app:layout_constraintVertical_bias="0.076">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" Country:"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/tableRow2"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="Togo "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/tableRow2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="166dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_profile_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.288">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" Email:"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="mvincentbb@gmail.com "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="109dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_profile_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.692">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" Phone Number:"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="0022892596324 "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_profile_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.904">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text=" Slack Username:"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="\@bakpatinavincent "
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
