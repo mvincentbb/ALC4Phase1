@@ -6,130 +6,132 @@
     android:layout_height="match_parent"
     tools:context=".MyProfileActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="335dp"
-        android:layout_height="410dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-        android:layout_marginEnd="396dp"
-        android:layout_marginBottom="1dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+
+        android:layout_height="match_parent"
+
+        android:layout_marginEnd="380dp"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/profile_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="212dp"
-            android:layout_height="320dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="66dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="65dp"
-            android:layout_marginBottom="92dp"
-            app:srcCompat="@drawable/profile_photo2" />
-    </RelativeLayout>
+            android:layout_width="189dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41"
+            app:srcCompat="@drawable/profile_photo2"
+            tools:layout_conversion_wrapHeight="840"
+            tools:layout_conversion_wrapWidth="557" />
 
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="BAKPATINA Vincent"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.277" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="BAKPATINA Vincent"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintEnd_toStartOf="@+id/relativeLayout2"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
-        app:layout_constraintVertical_bias="0.793" />
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="395dp"
-        android:layout_height="405dp"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
-        <TableRow
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/tableRow"
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:layout_alignStart="@+id/tableRow2"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="344dp"
-            android:layout_weight="1"
+            android:layout_width="317dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="64dp"
             android:background="@drawable/btn_profile_rounded"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="374dp">
+            app:layout_constraintStart_toStartOf="@+id/tableRow2"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/textView18"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tableRow"
-                android:layout_alignStart="@+id/tableRow"
-                android:layout_weight="1"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="239dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="monospace"
                 android:text=" Track:"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="123dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="178dp"
+                android:layout_marginBottom="7dp"
                 android:fontFamily="monospace"
                 android:text="Android "
                 android:textAlignment="viewEnd"
-                android:textSize="18sp" />
-        </TableRow>
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TableRow
             android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="266dp"
-            android:layout_weight="1"
+            android:layout_width="317dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/btn_profile_rounded"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.476"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableRow"
-            app:layout_constraintVertical_bias="0.076">
+            app:layout_constraintStart_toStartOf="@+id/tableRow4"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow">
 
             <TextView
                 android:id="@+id/textView26"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
@@ -140,7 +142,7 @@
 
             <TextView
                 android:id="@+id/textView27"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignTop="@+id/tableRow2"
                 android:layout_weight="1"
@@ -151,22 +153,17 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/tableRow3"
+            android:layout_width="317dp"
+            android:layout_height="38dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="200dp"
-            android:layout_weight="1"
             android:background="@drawable/btn_profile_rounded"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.476"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.288">
+            app:layout_constraintStart_toStartOf="@+id/tableRow5"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow4">
 
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="8dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
@@ -179,7 +176,7 @@
                 android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                                android:layout_weight="1"
+                android:layout_weight="1"
                 android:fontFamily="monospace"
                 android:text="mvincentbb@gmail.com "
                 android:textAlignment="viewEnd"
@@ -187,22 +184,17 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="39dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/tableRow4"
+            android:layout_width="317dp"
+            android:layout_height="37dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="114dp"
-            android:layout_weight="1"
             android:background="@drawable/btn_profile_rounded"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.761"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.692">
+            app:layout_constraintStart_toStartOf="@+id/tableRow3"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow2">
 
             <TextView
                 android:id="@+id/textView20"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
@@ -213,7 +205,7 @@
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
@@ -223,25 +215,19 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/tableRow5"
+            android:layout_width="317dp"
+            android:layout_height="34dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="56dp"
-            android:layout_weight="1"
             android:background="@drawable/btn_profile_rounded"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.761"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.904">
+            app:layout_constraintTop_toBottomOf="@+id/tableRow3">
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="83dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
                 android:text=" Slack Username:"
@@ -261,7 +247,7 @@
         </TableRow>
 
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
